@@ -1,0 +1,214 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header / Hero */
+header {
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    text-align: center;
+    padding: 120px 20px 80px;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+    margin-bottom: 40px;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #00ffff;
+    color: #0a0a0a;
+}
+
+.btn-primary:hover {
+    background-color: #00b8b8;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #ff00ff;
+    color: #0a0a0a;
+}
+
+.btn-secondary:hover {
+    background-color: #b800b8;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #00ffff;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 0 0 20px #00ffff;
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.projects a {
+    display: block;
+    background-color: #1c1c1c;
+    color: #ff00ff;
+    padding: 25px 40px;
+    border-radius: 15px;
+    font-weight: 500;
+    text-align: center;
+    min-width: 220px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
+}
+
+.projects a:hover {
+    color: #00ffff;
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
+    transform: scale(1.05);
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.skill {
+    background-color: #1c1c1c;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    color: #00ffff;
+    font-weight: 500;
+    box-shadow: 0 0 10px #00ffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff;
+}
+
+/* Testimonials */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 15px;
+    color: #ccc;
+    font-style: italic;
+    box-shadow: 0 0 10px #ff00ff;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.contact-buttons a {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-buttons .btn-primary {
+    background-color: #00ffff;
+    color: #0a0a0a;
+}
+
+.contact-buttons .btn-primary:hover {
+    background-color: #00b8b8;
+}
+
+.contact-buttons .btn-secondary {
+    background-color: #25D366; /* WhatsApp Green */
+    color: #0a0a0a;
+}
+
+.contact-buttons .btn-secondary:hover {
+    background-color: #1da851;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0a0a0a;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .projects a {
+        min-width: 150px;
+    }
+}
